@@ -19,6 +19,23 @@ typedef struct {
 	short FORM;
 } OPCODE;
 
+OPCODE Ops[] = {{"LDA   ", 3}, {"LDX   ", 3}, {"LDL   ", 3}, {"STA   ", 3},
+                {"STX   ", 3}, {"STL   ", 3}, {"ADD   ", 3}, {"SUB   ", 3},
+                {"MUL   ", 3}, {"DIV   ", 3}, {"COMP  ", 3}, {"TIX   ", 3},
+                {"JEQ   ", 3}, {"JGT   ", 3}, {"JLT   ", 3}, {"J     ", 3},
+                {"AND   ", 3}, {"OR    ", 3}, {"JSUB  ", 3}, {"SUB   ", 3},
+                {"LDCH  ", 3}, {"STCH  ", 3}, {"ADDF  ", 3}, {"SUBF  ", 3},
+                {"MULF  ", 3}, {"DIVF  ", 3}, {"LDB   ", 3}, {"LDS   ", 3},
+                {"LDF   ", 3}, {"LDT   ", 3}, {"STB   ", 3}, {"STS   ", 3},
+                {"STF   ", 3}, {"STT   ", 3}, {"COMPF ", 3}, {"      ", 0},
+                {"ADDR  ", 2}, {"SUBR  ", 2}, {"MULR  ", 2}, {"DIVR  ", 2},
+                {"COMPR ", 2}, {"SHIFTL", 2}, {"SHIFTR", 2}, {"RMO   ", 2},
+                {"SVC   ", 2}, {"CLEAR ", 2}, {"TIXR  ", 2}, {"      ", 0},
+                {"FLOAT ", 1}, {"FIX   ", 1}, {"NORM  ", 1}, {"      ", 0},
+                {"LPS   ", 3}, {"STI   ", 3}, {"RD    ", 3}, {"WD    ", 3},
+                {"TD    ", 3}, {"      ", 0}, {"STSW  ", 3}, {"SSK   ", 3},
+                {"SIO   ", 1}, {"HIO   ", 1}, {"TIO   ", 1}, {"      ", 0}};
+
 int main()
 {
 	typedef enum {ERROR = -1,LOAD,EXECUTE,DEBUG,DUMP,DIRECTORY,ASSEMBLE,HELP,EXIT} COMMAND; //Each command get enumed
