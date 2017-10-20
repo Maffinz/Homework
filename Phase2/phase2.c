@@ -176,7 +176,7 @@ int getcmd(char *c, int *n) //Return a value to the corresponding Command
 }
 
 
-void loadFile(char *p1, char *buff) //Loads a files
+void loadFile(char *p1, char *buff) //Loads a files ITS ASSEMBLE :-(
 {
 	//Declaring Variables needed
 	char string[250];
